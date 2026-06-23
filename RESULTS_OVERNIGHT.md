@@ -17,7 +17,7 @@ Planner prefetch: 8.5G (for tomorrow's 2-model test)
 ANE embed: data/ane_embeddings/heal_corpus.npy
 done
 
-## HEAL RESULT — base=qwen3-coder-next-8bit seq=1024 layers=4
+## HEAL RESULT (⚠️ INVALID — server did NOT apply adapter; see CORRECTED A/B below) — base=qwen3-coder-next-8bit seq=1024 layers=4
 | Model | Probe | Result |
 |---|---|---|
 | HEALED | MBPP-500 raw | pass@1 = 377/500 = 75.4% |
