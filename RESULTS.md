@@ -10,6 +10,7 @@ One honest measured number per stage. Fill as each lands. Never fake it.
 | 2 | + verify-loop best-of-N (k=4) | HumanEval-164 pass@1 | **97.6% (160/164)** ⬆ +4.3 vs raw | 2026-06-22 |
 | 3 | + FOCUS-9 LoRA heal | HumanEval-164 / FOCUS-9 probe | _pending_ | |
 | 4 | + one soul (canon) | facet probe | _pending_ | |
+| — | MBPP-500 raw (headroom probe) | pass@1 | **75.4% (377/500)** — 123 fails = real room | 2026-06-22 |
 | 5 | Pi on real repo task | solved Y/N | _pending_ | |
 
 ## Notes / observations
