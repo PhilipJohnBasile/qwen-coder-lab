@@ -41,7 +41,7 @@ def main():
     args = ap.parse_args()
 
     from datasets import load_dataset
-    ds = load_dataset("openai_humaneval", split="test")
+    ds = load_dataset("openai/openai_humaneval", split="test")
     if args.n < len(ds):
         ds = ds.select(range(args.n))
 
