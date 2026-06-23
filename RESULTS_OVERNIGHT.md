@@ -47,3 +47,16 @@ demolition's own neutral-heal finding. The REAL wins this run: the clean base it
 GOTCHA: `mlx_lm.server --adapter-path` silently served the BASE (no adapter-load line, byte-identical
 numbers). Always verify adapters via in-process `mlx_lm.load(model, adapter_path=...)` — the server
 path was untrustworthy here.
+
+## 🔒 SOULS — security facet eval (own turf, 10 headroom tasks, audited 10/10 discriminating)
+| Condition | Secure/10 | Δ vs base |
+|---|---|---|
+| base | 60% | — |
+| **+canon (prompt-soul)** | **90%** | **+30** |
+| +soul (LoRA) | 70% | +10 |
+| +canon+soul | 80% | +20 (LoRA *hurt* the prompt: 90→80) |
+
+**Verdict: souls = the CANON (heritage-activation by prompting) + a facet verifier, delivered at
+inference — NOT a baked LoRA adapter.** The canon cut vulns 3× unprompted; the LoRA soul was weak
+alone and actively interfered with the canon. Weight-baked souls are dead; canon-as-context is alive
+and beats the fine-tune. Same lesson as the rest of the project: context + verification > weight surgery.
