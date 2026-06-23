@@ -24,3 +24,11 @@ done
 | HEALED | HumanEval-164 raw | pass@1 = 153/164 = 93.3% |
 | HEALED | soul(security) | probe = 4/5 pass |
 | HEALED | agent loop | STAGE 5 UNSOLVED after 6 iters (last output above) == |
+
+## CORRECTED heal A/B (in-process, adapter verified applied)
+| Model | Probe | Result |
+|---|---|---|
+| BASE | MBPP-500 | pass@1 = 377/500 = 75.4% |
+| HEALED | MBPP-500 | pass@1 = 375/500 = 75.0% |
+| BASE | HumanEval-164 | pass@1 = 153/164 = 93.3% |
+| HEALED | HumanEval-164 | pass@1 = 149/164 = 90.9% |
