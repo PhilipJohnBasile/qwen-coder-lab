@@ -28,7 +28,11 @@ The **480B-A35B** is stronger but won't fit 128 GB at usable quant (~240 GB @ 4-
 | **2** | + verify-loop lift, best-of-N gated (`scripts/02_verify_loop.py`) | ~1 hr | raw vs +verify Δ |
 | **3** | LoRA-heal on FOCUS-9 gold → re-bench | training | does healing lift a clean base? |
 | **4** | mount one soul (security/design) via canon → facet probe | training | facet lift |
-| **5** | drive with Pi/merle on a real repo task | — | task solved Y/N |
+| **5** | drive with Pi on a real repo task | — | task solved Y/N |
+
+**Minimal stack on purpose:** base + agent-toolkit verifiers + heal data. That's the whole
+experiment. No retrieval/memory/extra-CLI layers — they can't move a `pass@1` number and would just
+add surface area. Add them later *only if* a real Stage-5 task measurably needs one.
 
 **Discipline (inherited from the demolition):** one honest measured number per stage. Never fake it.
 `HEAL max-seq ≤ 2048` · `enable_thinking=false` for code bench · clean stale MLX procs before any serve.
@@ -54,10 +58,9 @@ scripts/02_verify_loop.py # best-of-N + verify_domain() gate → the lift number
 RESULTS.md                # the running scoreboard (fill as stages land)
 ```
 
-## Pairs with
-- [agent-toolkit](https://github.com/PhilipJohnBasile/agent-toolkit) — verifiers + soul canons + flywheels
-- [merle](https://github.com/PhilipJohnBasile/merle) — verifier-first coding CLI (`MERLE_BASE`)
-- [Pi](https://github.com/bradAGI/awesome-cli-coding-agents) — the MLX-native local harness
+## Depends on
+- [agent-toolkit](https://github.com/PhilipJohnBasile/agent-toolkit) — verifiers + soul canons + heal data wiring (the only hard dep)
+- [Pi](https://github.com/bradAGI/awesome-cli-coding-agents) — MLX-native local harness, Stage 5 only
 
 ## License
 MIT.

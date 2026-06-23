@@ -10,7 +10,7 @@ One honest measured number per stage. Fill as each lands. Never fake it.
 | 2 | + verify-loop best-of-N (k=4) | HumanEval-164 pass@1 | _pending_ | |
 | 3 | + FOCUS-9 LoRA heal | HumanEval-164 / FOCUS-9 probe | _pending_ | |
 | 4 | + one soul (canon) | facet probe | _pending_ | |
-| 5 | Pi/merle on real repo task | solved Y/N | _pending_ | |
+| 5 | Pi on real repo task | solved Y/N | _pending_ | |
 
 ## Notes / observations
 - _(log surprises, dead levers, and the honest read here — same discipline as the demolition)_
