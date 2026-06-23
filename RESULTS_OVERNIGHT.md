@@ -7,3 +7,12 @@ Base ref: HumanEval raw 93.3% / +loop 97.6% | MBPP raw 75.4%
 | base | MBPP-500 +loop(k=4) | pass@1 = 442/500 = 88.4% |
 
 Planner prefetch: 8.5G (for tomorrow's 2-model test)
+
+## Stage 4 + 5 (healed model)
+| Stage | Result |
+|---|---|
+| 4 soul(security) | probe = 4/5 pass |
+| 5 agent (KVStore+pytest) | STAGE 5 UNSOLVED after 6 iters |
+
+ANE embed: data/ane_embeddings/heal_corpus.npy
+done
