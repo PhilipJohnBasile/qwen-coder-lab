@@ -16,3 +16,11 @@ Planner prefetch: 8.5G (for tomorrow's 2-model test)
 
 ANE embed: data/ane_embeddings/heal_corpus.npy
 done
+
+## HEAL RESULT — base=qwen3-coder-next-8bit seq=1024 layers=4
+| Model | Probe | Result |
+|---|---|---|
+| HEALED | MBPP-500 raw | pass@1 = 377/500 = 75.4% |
+| HEALED | HumanEval-164 raw | pass@1 = 153/164 = 93.3% |
+| HEALED | soul(security) | probe = 4/5 pass |
+| HEALED | agent loop | STAGE 5 UNSOLVED after 6 iters (last output above) == |
