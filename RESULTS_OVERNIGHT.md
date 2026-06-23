@@ -32,3 +32,18 @@ done
 | HEALED | MBPP-500 | pass@1 = 375/500 = 75.0% |
 | BASE | HumanEval-164 | pass@1 = 153/164 = 93.3% |
 | HEALED | HumanEval-164 | pass@1 = 149/164 = 90.9% |
+
+## ✅ FINAL VERDICT (true, adapter-verified)
+| Probe | Base | Healed | Δ |
+|---|---|---|---|
+| MBPP-500 | 75.4% | 75.0% | **−0.4 (flat)** |
+| HumanEval-164 | 93.3% | 90.9% | **−2.4 (mild degrade)** |
+
+**The LoRA heal did NOT lift the clean base — neutral on MBPP, slightly negative on HumanEval.**
+Matches the research (healing a near-saturated strong coder risks mild forgetting, not gains) and the
+demolition's own neutral-heal finding. The REAL wins this run: the clean base itself (93.3% HE) and the
+**verify-loop** (+verify → 97.6% HE / 88.4% MBPP). Test-time compute > weight-surgery here.
+
+GOTCHA: `mlx_lm.server --adapter-path` silently served the BASE (no adapter-load line, byte-identical
+numbers). Always verify adapters via in-process `mlx_lm.load(model, adapter_path=...)` — the server
+path was untrustworthy here.
