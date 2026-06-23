@@ -1,0 +1,6 @@
+.venv/
+models/
+heal/
+__pycache__/
+*.pyc
+.DS_Store

@@ -1,0 +1,7 @@
+# core
+mlx-lm>=0.21          # serve + LoRA on Apple Silicon
+datasets>=2.18        # HumanEval load
+numpy
+
+# agent-toolkit (verify_domain) is imported off-path via AGENT_TOOLKIT env or sibling dir.
+# clone it next to this lab:  git clone https://github.com/PhilipJohnBasile/agent-toolkit ../agent-toolkit
